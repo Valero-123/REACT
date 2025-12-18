@@ -8,6 +8,10 @@ import { Review } from "../../types/reviews";
 import { ReviewsList } from "../../components/reviews-list/reviews-list";
 import Map from "../../components/map/map";
 import { NearPlacesCardList } from "../../components/near-places-list/near-places-list";
+import { Link } from "react-router-dom";
+import { getFavoritesLength} from "../../utils";
+import { useAppSelector } from "../../hooks";
+
 
 type OfferProps = {
     offers: FullOffer[];
@@ -48,8 +52,6 @@ function OfferPage({ offers, reviews: initialReviews }: OfferProps) {
         isFavorite: o.isFavorite ?? false
     }));
 
-
-
     const city = {
         lat: offer.city.location.latitude,
         lng: offer.city.location.longitude,
@@ -70,7 +72,8 @@ function OfferPage({ offers, reviews: initialReviews }: OfferProps) {
             lng: o.location.longitude
         }))
     ];
-
+    const offersList = useAppSelector((state) => state.offers);
+    const favoriteLength = getFavoritesLength(offersList);
     return (
         <div className="page">
             <header className="header">
@@ -86,11 +89,12 @@ function OfferPage({ offers, reviews: initialReviews }: OfferProps) {
                                         className="header__nav-link header__nav-link--profile"
                                         href="#"
                                     >
-                                        <div className="header__avatar-wrapper user__avatar-wrapper"></div>
-                                        <span className="header__user-name user__name">
-                                            Myemail@gmail.com
-                                        </span>
-                                        <span className="header__favorite-count">3</span>
+                                         <div className="header__avatar-wrapper user__avatar-wrapper">
+                                        </div>
+                                        <span className="header__user-name user__name">Myemail@gmail.com</span>
+                                        <Link to="/favorites">
+                                            <span className="header__favorite-count">{favoriteLength}</span>
+                                        </Link>
                                     </a>
                                 </li>
                                 <li className="header__nav-item">

@@ -1,22 +1,7 @@
 import { OffersList } from "../types/offer";
 
 const offersList: OffersList[] = [
-  {
-    id: 'apt-001',
-    title: 'Wood and Stone Place',
-    type: 'apartment',
-    price: 370,
-    city: {
-      name: 'Paris',
-      location: { latitude: 48.8561, longitude: 2.351499, zoom: 13 }
-    },
-    location: { latitude: 48.8568, longitude: 2.342499, zoom: 16 },
-    isFavorite: true,
-    isPremium: false,
-    rating: 4.9,
-    previewImage: '/img/apartment-01.jpg'
-  },
-
+  
   {
     id: 'apt-002',
     title: 'Bright Canal Loft',
@@ -24,9 +9,9 @@ const offersList: OffersList[] = [
     price: 215,
     city: {
       name: 'Amsterdam',
-      location: { latitude: 52.3702, longitude: 4.8952, zoom: 12 }
+      location: { latitude: 52.3702, longitude: 4.8952, zoom: 18 }
     },
-    location: { latitude: 52.3695, longitude: 4.8974, zoom: 15 },
+    location: { latitude: 52.3695, longitude: 4.8974, zoom: 18 },
     isFavorite: false,
     isPremium: true,
     rating: 4.7,
@@ -40,9 +25,9 @@ const offersList: OffersList[] = [
     price: 150,
     city: {
       name: 'Brussels',
-      location: { latitude: 50.8503, longitude: 4.3517, zoom: 12 }
+      location: { latitude: 50.8503, longitude: 4.3517, zoom: 18 }
     },
-    location: { latitude: 50.8498, longitude: 4.3542, zoom: 15 },
+    location: { latitude: 50.8498, longitude: 4.3542, zoom: 18 },
     isFavorite: true,
     isPremium: false,
     rating: 4.4,
@@ -56,9 +41,9 @@ const offersList: OffersList[] = [
     price: 290,
     city: {
       name: 'Hamburg',
-      location: { latitude: 53.5511, longitude: 9.9937, zoom: 12 }
+      location: { latitude: 53.5511, longitude: 9.9937, zoom: 18 }
     },
-    location: { latitude: 53.5522, longitude: 9.9954, zoom: 15 },
+    location: { latitude: 53.5522, longitude: 9.9954, zoom: 18 },
     isFavorite: false,
     isPremium: true,
     rating: 4.8,
@@ -77,30 +62,7 @@ const offersList: OffersList[] = [
     rating: 4.3,
     previewImage: '/img/mocks/5_1.jpg'
   },
-  {
-    id: 'apt-006',
-    title: 'Vintage Corner Room',
-    type: 'room',
-    price: 75,
-    city: { name: 'Cologne', location: { latitude: 50.9375, longitude: 6.9603, zoom: 12 } },
-    location: { latitude: 50.9370, longitude: 6.9580, zoom: 15 },
-    isFavorite: true,
-    isPremium: false,
-    rating: 4.1,
-    previewImage: '/img/mocks/6_1.jpg'
-  },
-  {
-    id: 'apt-007',
-    title: 'Canal-side Studio',
-    type: 'studio',
-    price: 95,
-    city: { name: 'Brussels', location: { latitude: 50.8503, longitude: 4.3517, zoom: 12 } },
-    location: { latitude: 50.8500, longitude: 4.3525, zoom: 15 },
-    isFavorite: false,
-    isPremium: false,
-    rating: 4.2,
-    previewImage: '/img/mocks/7_1.jpg'
-  },
+
   {
     id: 'apt-008',
     title: 'Modern Loft',
@@ -113,18 +75,7 @@ const offersList: OffersList[] = [
     rating: 4.6,
     previewImage: '/img/mocks/8_1.jpg'
   },
-  {
-    id: 'apt-009',
-    title: 'Quiet Suburb Home',
-    type: 'apartment',
-    price: 140,
-    city: { name: 'Hamburg', location: { latitude: 53.5511, longitude: 9.9937, zoom: 12 } },
-    location: { latitude: 53.5500, longitude: 9.9950, zoom: 15 },
-    isFavorite: false,
-    isPremium: false,
-    rating: 4.0,
-    previewImage: '/img/mocks/9_1.jpg'
-  },
+
   {
     id: 'apt-010',
     title: 'Designer Flat',
@@ -173,18 +124,7 @@ const offersList: OffersList[] = [
     rating: 4.5,
     previewImage: '/img/mocks/13_1.jpg'
   },
-  {
-    id: 'apt-014',
-    title: 'Historic House',
-    type: 'apartment',
-    price: 200,
-    city: { name: 'Hamburg', location: { latitude: 53.5511, longitude: 9.9937, zoom: 12 } },
-    location: { latitude: 53.5530, longitude: 9.9940, zoom: 15 },
-    isFavorite: false,
-    isPremium: true,
-    rating: 4.7,
-    previewImage: '/img/mocks/14_1.jpg'
-  },
+
   {
     id: 'apt-015',
     title: 'Loft with Terrace',
@@ -228,7 +168,7 @@ const offersList: OffersList[] = [
     price: 195,
     city: { name: 'Amsterdam', location: { latitude: 52.3702, longitude: 4.8952, zoom: 12 } },
     location: { latitude: 52.3710, longitude: 4.8955, zoom: 16 },
-    isFavorite: false,
+    isFavorite: true,
     isPremium: true,
     rating: 4.6,
     previewImage: '/img/mocks/18_1.jpg'
@@ -376,7 +316,55 @@ const offersList: OffersList[] = [
     isPremium: true,
     rating: 4.9,
     previewImage: '/img/mocks/30_1.jpg'
-  }
+  },
+{
+    id: 'apt-031',
+    title: 'Modern Riverside Loft',
+    type: 'apartment',
+    price: 220,
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2260, longitude: 6.7770, zoom: 16 },
+    isPremium: true,
+    isFavorite: false,
+    rating: 4.9,
+    previewImage: '/img/mocks/31_1.jpg'
+},
+{
+    id: 'apt-032',
+    title: 'Altstadt Studio',
+    type: 'apartment',
+    price: 120,
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2270, longitude: 6.7750, zoom: 16 },
+    isPremium: false,
+    isFavorite: true,
+    rating: 4.3,
+    previewImage: '/img/mocks/32_1.jpg'
+},
+{
+    id: 'apt-033',
+    title: 'MedienHafen Penthouse',
+    type: 'apartment',
+    price: 350,
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2145, longitude: 6.7642, zoom: 16 },
+    isPremium: true,
+    isFavorite: false,
+    rating: 5.0,
+    previewImage: '/img/mocks/33_1.jpg'
+},
+{
+    id: 'apt-034',
+    title: 'Königsallee Luxury Suite',
+    type: 'hotel',
+    price: 280,
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2240, longitude: 6.7785, zoom: 16 },
+    isPremium: true,
+    isFavorite: true,
+    rating: 4.7,
+    previewImage: '/img/mocks/34_1.jpg'
+}
 ];
 
 export { offersList };

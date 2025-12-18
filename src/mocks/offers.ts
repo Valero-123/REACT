@@ -1,42 +1,7 @@
 import { FullOffer } from "../types/offer";
 
 const offers: FullOffer[] = [
-    {
-        id: 'apt-001',
-        title: 'Wood and Stone Place',
-        description:
-            'A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families.',
-        type: 'apartment',
-        price: 370,
-        images: ['/img/apartment-01.jpg', '/img/apartment-01.jpg', '/img/apartment-01.jpg', '/img/apartment-01.jpg', '/img/apartment-01.jpg', '/img/apartment-01.jpg'],
-        city: {
-            name: 'Paris',
-            location: { latitude: 48.8561, longitude: 2.351499, zoom: 13 }
-        },
-        location: { latitude: 48.8568, longitude: 2.342499, zoom: 16 },
-        goods: [
-            'Heating',
-            'Wi-Fi',
-            'Fridge',
-            'Laptop friendly workspace',
-            'Baby seat',
-            'Air conditioning',
-            'Washer',
-            'Towels',
-            'Dishwasher',
-            'Kitchen',
-            'Washing machine',
-            'Breakfast',
-            'Coffee machine'
-        ],
-        host: { isPro: true, name: 'Marat', avatarUrl: '/img/avatar.svg' },
-        isPremium: false,
-        isFavorite: true,
-        rating: 4.9,
-        bedrooms: 2,
-        maxAdults: 3
-    },
-
+    
     {
         id: 'apt-002',
         title: 'Bright Canal Loft',
@@ -141,41 +106,6 @@ const offers: FullOffer[] = [
         maxAdults: 2
     },
 
-    {
-        id: 'apt-006',
-        title: 'Vintage Corner Room',
-        description: 'Cozy room with vintage decor and friendly host.',
-        type: 'room',
-        price: 75,
-        images: ['/img/mocks/6_1.jpg', '/img/mocks/6_2.jpg', '/img/mocks/6_3.jpg'],
-        city: { name: 'Cologne', location: { latitude: 50.9375, longitude: 6.9603, zoom: 12 } },
-        location: { latitude: 50.9370, longitude: 6.9580, zoom: 15 },
-        goods: ['Wi-Fi', 'Heating', 'Coffee machine'],
-        host: { isPro: false, name: 'Hans', avatarUrl: '/img/avatar.svg' },
-        isPremium: false,
-        isFavorite: true,
-        rating: 4.1,
-        bedrooms: 1,
-        maxAdults: 1
-    },
-
-    {
-        id: 'apt-007',
-        title: 'Canal-side Studio',
-        description: 'Small studio with a view to the canal and minimalistic furnishings.',
-        type: 'studio',
-        price: 95,
-        images: ['/img/mocks/7_1.jpg', '/img/mocks/7_2.jpg', '/img/mocks/7_3.jpg', '/img/mocks/7_4.jpg'],
-        city: { name: 'Brussels', location: { latitude: 50.8503, longitude: 4.3517, zoom: 12 } },
-        location: { latitude: 50.8500, longitude: 4.3525, zoom: 15 },
-        goods: ['Wi-Fi', 'Kitchen', 'Towels'],
-        host: { isPro: true, name: 'Marie', avatarUrl: '/img/avatar.svg' },
-        isPremium: false,
-        isFavorite: false,
-        rating: 4.2,
-        bedrooms: 1,
-        maxAdults: 2
-    },
 
     {
         id: 'apt-008',
@@ -195,23 +125,7 @@ const offers: FullOffer[] = [
         maxAdults: 3
     },
 
-    {
-        id: 'apt-009',
-        title: 'Quiet Suburb Home',
-        description: 'Family home in a quiet suburb, good for longer stays.',
-        type: 'apartment',
-        price: 140,
-        images: ['/img/mocks/9_1.jpg', '/img/mocks/9_2.jpg', '/img/mocks/9_3.jpg'],
-        city: { name: 'Hamburg', location: { latitude: 53.5511, longitude: 9.9937, zoom: 12 } },
-        location: { latitude: 53.5500, longitude: 9.9950, zoom: 15 },
-        goods: ['Wi-Fi', 'Washer', 'Kitchen'],
-        host: { isPro: true, name: 'Lina', avatarUrl: '/img/avatar.svg' },
-        isPremium: false,
-        isFavorite: false,
-        rating: 4.0,
-        bedrooms: 2,
-        maxAdults: 4
-    },
+
 
     {
         id: 'apt-010',
@@ -285,23 +199,6 @@ const offers: FullOffer[] = [
         maxAdults: 3
     },
 
-    {
-        id: 'apt-014',
-        title: 'Historic House',
-        description: 'Charming historic house with traditional features.',
-        type: 'apartment',
-        price: 200,
-        images: ['/img/mocks/14_1.jpg', '/img/mocks/14_2.jpg', '/img/mocks/14_3.jpg', '/img/mocks/14_4.jpg'],
-        city: { name: 'Hamburg', location: { latitude: 53.5511, longitude: 9.9937, zoom: 12 } },
-        location: { latitude: 53.5530, longitude: 9.9940, zoom: 15 },
-        goods: ['Wi-Fi', 'Breakfast', 'Towels'],
-        host: { isPro: false, name: 'Mark', avatarUrl: '/img/avatar.svg' },
-        isPremium: true,
-        isFavorite: false,
-        rating: 4.7,
-        bedrooms: 3,
-        maxAdults: 5
-    },
 
     {
         id: 'apt-015',
@@ -369,7 +266,7 @@ const offers: FullOffer[] = [
         goods: ['Wi-Fi', 'Dishwasher', 'Coffee machine'],
         host: { isPro: true, name: 'Bas', avatarUrl: '/img/avatar.svg' },
         isPremium: true,
-        isFavorite: false,
+        isFavorite: true,
         rating: 4.6,
         bedrooms: 2,
         maxAdults: 4
@@ -589,7 +486,76 @@ const offers: FullOffer[] = [
         rating: 4.9,
         bedrooms: 3,
         maxAdults: 5
-    }
+    },
+    {
+    id: 'apt-031',
+    title: 'Modern Riverside Loft',
+    description: 'Stylish loft with panoramic river views in the heart of Dusseldorf.',
+    type: 'apartment',
+    price: 220,
+    images: ['/img/mocks/31_1.jpg', '/img/mocks/31_2.jpg', '/img/mocks/31_3.jpg','/img/mocks/31_4.jpg','/img/mocks/31_5.jpg','/img/mocks/31_6.jpg'],
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2260, longitude: 6.7770, zoom: 16 },
+    goods: ['Wi-Fi', 'Heating', 'Kitchen', 'Coffee machine'],
+    host: { isPro: true, name: 'Klaus', avatarUrl: '/img/avatar.svg' },
+    isPremium: true,
+    isFavorite: false,
+    rating: 4.9,
+    bedrooms: 2,
+    maxAdults: 4
+},
+{
+    id: 'apt-032',
+    title: 'Altstadt Studio',
+    description: 'Cozy studio in the historic Old Town, steps from bars and restaurants.',
+    type: 'apartment',
+    price: 120,
+    images: ['/img/mocks/32_1.jpg', '/img/mocks/32_2.jpg','/img/mocks/32_3.jpg', '/img/mocks/32_4.jpg'],
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2270, longitude: 6.7750, zoom: 16 },
+    goods: ['Wi-Fi', 'TV', 'Hair dryer'],
+    host: { isPro: false, name: 'Sophie', avatarUrl: '/img/avatar.svg' },
+    isPremium: false,
+    isFavorite: true,
+    rating: 4.3,
+    bedrooms: 1,
+    maxAdults: 2
+},
+{
+    id: 'apt-033',
+    title: 'MedienHafen Penthouse',
+    description: 'Luxurious penthouse in the iconic MedienHafen district with designer interior.',
+    type: 'apartment',
+    price: 350,
+    images: ['/img/mocks/33_1.jpg', '/img/mocks/33_2.jpg', '/img/mocks/33_3.jpg', '/img/mocks/33_4.jpg', '/img/mocks/33_5.jpg'],
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2145, longitude: 6.7642, zoom: 16 },
+    goods: ['Wi-Fi', 'Air conditioning', 'Jacuzzi', 'Terrace', 'Parking'],
+    host: { isPro: true, name: 'Maximilian', avatarUrl: '/img/avatar.svg' },
+    isPremium: true,
+    isFavorite: false,
+    rating: 5.0,
+    bedrooms: 3,
+    maxAdults: 6
+},
+{
+    id: 'apt-034',
+    title: 'Königsallee Luxury Suite',
+    description: 'Elegant suite near the famous shopping avenue, featuring high-end furnishings.',
+    type: 'hotel',
+    price: 280,
+    images: ['/img/mocks/34_1.jpg', '/img/mocks/34_2.jpg', '/img/mocks/34_3.jpg', '/img/mocks/34_4.jpg'],
+    city: { name: 'Dusseldorf', location: { latitude: 51.2254, longitude: 6.7763, zoom: 13 } },
+    location: { latitude: 51.2240, longitude: 6.7785, zoom: 16 },
+    goods: ['Wi-Fi', 'Air conditioning', 'Minibar', 'Room service', 'Spa access'],
+    host: { isPro: true, name: 'Hotel Manager', avatarUrl: '/img/avatar.svg' },
+    isPremium: true,
+    isFavorite: true,
+    rating: 4.7,
+    bedrooms: 1,
+    maxAdults: 2
+}
+
 ]
 
 export { offers };
