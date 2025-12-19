@@ -10,7 +10,7 @@ function FavoritesCardList({ offersList }: FavoritesCardListProps) {
         <div className="favorites__places">
             {Array.from(offersList, (item) =>
                 <FavoritesCard key={item.id} id={item.id} title={item.title} type={item.type} price={item.price}
-                    previewImage={item.previewImage} isPremium={item.isPremium} rating={item.rating} />
+                    previewImage={item.previewImage} isPremium={item.isPremium} isFavorite={item.isFavorite} rating={item.rating} />
             )}
         </div>
     );

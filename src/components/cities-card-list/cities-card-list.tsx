@@ -13,6 +13,7 @@ function CitiesCardList({ offersList, onListItemHover }: CitiesCardListProps) {
                 <PlaceCard
                     key={offer.id}
                     {...offer}
+                    isFavorite={offer.isFavorite}
                     cardClassName="cities__card"
                     imgWrapperClass="cities__image-wrapper"
                     imgWidth={260}

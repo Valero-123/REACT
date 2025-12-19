@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { AppRoute } from "../../const";
-
 type PlaceCardProps = {
   id: string;
   title: string;
   type: string;
   price: number;
   isPremium: boolean;
+  isFavorite: boolean;
   previewImage: string;
   rating: number;
 
@@ -26,6 +26,7 @@ function PlaceCard({
   type,
   price,
   isPremium,
+  isFavorite,
   previewImage,
   rating,
   cardClassName,
@@ -68,6 +69,13 @@ function PlaceCard({
             <span className="place-card__price-text">/ night</span>
           </div>
         </div>
+
+        <button className={`place-card__bookmark-button button ${isFavorite ? 'place-card__bookmark-button--active' : ''}`} type="button">
+          <svg className="place-card__bookmark-icon" width="18" height="19">
+              <use href="/img/sprite.svg#icon-bookmark"></use>
+           </svg>
+            <span className="visually-hidden">To bookmarks</span>
+        </button>
 
         <div className="place-card__rating rating">
           <div className="place-card__stars rating__stars">
