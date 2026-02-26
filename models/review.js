@@ -35,4 +35,4 @@ Review.belongsTo(User, { as: 'author', foreignKey: { allowNull: false } });
 Review.belongsTo(Offer, { foreignKey: { allowNull: false } });
 
 
-export {Review};
+export default Review;
